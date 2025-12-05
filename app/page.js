@@ -1,15 +1,38 @@
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import CompareSection from '@/components/CompareSection';
+import HowItWorks from '@/components/HowItWorks';
+import Features from '@/components/Features';
+import BeforeYouBuy from '@/components/BeforeYouBuy';
+import Testimonials from '@/components/Testimonials';
+import FAQ from '@/components/FAQ';
+import Footer from '@/components/Footer';
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50 to-white flex items-center justify-center px-4">
-      <div className="text-center">
-        <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent mb-4">
-          Carlytic
-        </h1>
-        <p className="text-2xl md:text-3xl text-gray-600">
-          Welcome to Carlytical
-        </p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <section id="compare">
+        <CompareSection />
+      </section>
+      <section id="how-it-works">
+        <HowItWorks />
+      </section>
+      <section id="features">
+        <Features />
+      </section>
+      <section id="before-you-buy">
+        <BeforeYouBuy />
+      </section>
+      <section id="testimonials">
+        <Testimonials />
+      </section>
+      <section id="faq">
+        <FAQ />
+      </section>
+      <Footer />
+    </main>
   );
 }
 
